@@ -1,0 +1,14 @@
+query RunInput {
+  cart {
+    lines {
+      id
+      quantity
+      discountApplicable: attribute(key: "discountApplicable") {
+        value
+      }
+      discountAmount:attribute(key: "discountAmount") {
+        value
+      }
+    }
+  }
+}
