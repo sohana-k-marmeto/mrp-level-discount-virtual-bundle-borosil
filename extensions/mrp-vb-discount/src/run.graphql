@@ -3,10 +3,10 @@ query RunInput {
     lines {
       id
       quantity
-      discountApplicable: attribute(key: "discountApplicable") {
+      discountApplicable: attribute(key: "_discountApplicable") {
         value
       }
-      discountAmount:attribute(key: "discountAmount") {
+      discountAmount:attribute(key: "_discountAmount") {
         value
       }
     }
